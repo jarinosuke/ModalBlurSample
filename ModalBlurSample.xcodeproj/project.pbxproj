@@ -13,6 +13,7 @@
 		77DFFF2E1A32BB9900411142 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77DFFF2D1A32BB9900411142 /* Images.xcassets */; };
 		77DFFF311A32BB9900411142 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77DFFF2F1A32BB9900411142 /* LaunchScreen.xib */; };
 		77DFFF3D1A32BB9900411142 /* ModalBlurSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DFFF3C1A32BB9900411142 /* ModalBlurSampleTests.swift */; };
+		77DFFF471A32BCF300411142 /* BlurModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DFFF461A32BCF300411142 /* BlurModalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		77DFFF361A32BB9900411142 /* ModalBlurSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModalBlurSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77DFFF3B1A32BB9900411142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77DFFF3C1A32BB9900411142 /* ModalBlurSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalBlurSampleTests.swift; sourceTree = "<group>"; };
+		77DFFF461A32BCF300411142 /* BlurModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurModalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				77DFFF261A32BB9900411142 /* AppDelegate.swift */,
 				77DFFF281A32BB9900411142 /* ViewController.swift */,
+				77DFFF461A32BCF300411142 /* BlurModalViewController.swift */,
 				77DFFF2A1A32BB9900411142 /* Main.storyboard */,
 				77DFFF2D1A32BB9900411142 /* Images.xcassets */,
 				77DFFF2F1A32BB9900411142 /* LaunchScreen.xib */,
@@ -214,6 +217,7 @@
 			files = (
 				77DFFF291A32BB9900411142 /* ViewController.swift in Sources */,
 				77DFFF271A32BB9900411142 /* AppDelegate.swift in Sources */,
+				77DFFF471A32BCF300411142 /* BlurModalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +409,7 @@
 				77DFFF421A32BB9900411142 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77DFFF431A32BB9900411142 /* Build configuration list for PBXNativeTarget "ModalBlurSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +418,7 @@
 				77DFFF451A32BB9900411142 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
