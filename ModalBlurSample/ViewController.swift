@@ -21,6 +21,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func presentModalBlurButtonTapped(sender:AnyObject) {
+        let blurModalViewController = BlurModalViewController()
+        blurModalViewController.modalPresentationStyle = .OverFullScreen
+        self.presentViewController(blurModalViewController, animated: true, completion: nil)
     }
 }
 

@@ -9,15 +9,23 @@
 import UIKit
 
 class BlurModalViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.view.backgroundColor = .clearColor()
+        
+        let visuaEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .Light))
+        visuaEffectView.frame = self.view.bounds
+        self.view.addSubview(visuaEffectView)
+        
+        let closeButon = UIButton()
+        closeButon.setTitle("Close", forState: .Normal)
+        closeButon.sizeToFit()
+        closeButon.frame = CGRectMake(8.0, 28.0, 80.0, 20.0)
+        closeButon.addTarget(self, action: "closeButtonTapped:", forControlEvents: .TouchUpInside)
+        self.view.addSubview(closeButon)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func closeButtonTapped(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
 }
