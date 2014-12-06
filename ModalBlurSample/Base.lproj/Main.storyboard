@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YsQ-ae-hu3">
-                                <rect key="frame" x="171" y="274" width="259" height="51"/>
+                                <rect key="frame" x="16" y="274" width="568" height="51"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
                                 <state key="normal" title="Present Blur Modal">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -27,16 +28,34 @@
                                     <action selector="presentModalBlurButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dxd-IW-zB0"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2gq-vu-LT7">
+                                <rect key="frame" x="0.0" y="325" width="600" height="275"/>
+                                <color key="backgroundColor" red="0.25239846013893458" green="0.9330357142857143" blue="0.71784043204440739" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ay4-hD-p3v">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="274"/>
+                                <color key="backgroundColor" red="0.85539044895977956" green="1" blue="0.27009674103119841" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.078640310026864932" green="0.88746279761904767" blue="0.3486510343712888" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="2gq-vu-LT7" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="0hS-M8-fFQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YsQ-ae-hu3" secondAttribute="trailing" id="1Td-Gj-UGv"/>
+                            <constraint firstItem="ay4-hD-p3v" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="93B-am-t1P"/>
+                            <constraint firstItem="YsQ-ae-hu3" firstAttribute="top" secondItem="ay4-hD-p3v" secondAttribute="bottom" id="Chf-D5-M0H"/>
+                            <constraint firstItem="2gq-vu-LT7" firstAttribute="top" secondItem="YsQ-ae-hu3" secondAttribute="bottom" id="DZU-ch-yPN"/>
                             <constraint firstAttribute="centerY" secondItem="YsQ-ae-hu3" secondAttribute="centerY" id="Gpl-8j-8qG"/>
-                            <constraint firstAttribute="centerX" secondItem="YsQ-ae-hu3" secondAttribute="centerX" id="sII-fF-mxy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2gq-vu-LT7" secondAttribute="trailing" constant="-16" id="WOR-gj-f70"/>
+                            <constraint firstItem="YsQ-ae-hu3" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Ydq-el-bt0"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="2gq-vu-LT7" secondAttribute="bottom" id="ZpD-4T-esf"/>
+                            <constraint firstItem="ay4-hD-p3v" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="oN0-5w-9gS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ay4-hD-p3v" secondAttribute="trailing" constant="-16" id="qOD-7m-MEl"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="305" y="350"/>
         </scene>
     </scenes>
 </document>
