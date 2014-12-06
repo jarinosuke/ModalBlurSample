@@ -19,8 +19,12 @@ class BlurModalViewController: UIViewController {
         
         let closeButon = UIButton()
         closeButon.setTitle("Close", forState: .Normal)
+        closeButon.titleLabel?.font = UIFont(name: "Futura", size: 30.0)
         closeButon.sizeToFit()
-        closeButon.frame = CGRectMake(8.0, 28.0, 80.0, 20.0)
+        let center = self.view.center
+        let buttonWidth = CGRectGetWidth(closeButon.frame)
+        let buttonHeight = CGRectGetHeight(closeButon.frame)
+        closeButon.frame = CGRectMake(center.x - buttonWidth / 2, center.y - buttonHeight / 2, buttonWidth, buttonHeight)
         closeButon.addTarget(self, action: "closeButtonTapped:", forControlEvents: .TouchUpInside)
         self.view.addSubview(closeButon)
     }
